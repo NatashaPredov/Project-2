@@ -4,6 +4,8 @@
 
 ## Scope and Purpose of Project
 
+
+
 ## Questions Findings, Analysis, Conclusions and Implications
 
 ## Connection to Course Content
