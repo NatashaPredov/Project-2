@@ -2,7 +2,7 @@
 
 ## Presentation Link & Google Colab Link
 
-https://colab.research.google.com/github/NatashaPredov/Private_FinTech/blob/main/02-Python/1/Activities/03-Stu_Jupyter_Project/Solved/Jupyter-Workspace/hello_world.ipynb
+https://colab.research.google.com/drive/1oMDA37RPqLsV02G0zDd6kaWDExMvUDVi
 
 
 ## Scope and Purpose of Project
