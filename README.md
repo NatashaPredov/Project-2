@@ -1,6 +1,9 @@
 ## Project 2 Overview
 
-## Presentation Link
+## Presentation Link & Google Colab Link
+
+https://colab.research.google.com/github/NatashaPredov/Private_FinTech/blob/main/02-Python/1/Activities/03-Stu_Jupyter_Project/Solved/Jupyter-Workspace/hello_world.ipynb
+
 
 ## Scope and Purpose of Project
 - y varible (target) is BNS
