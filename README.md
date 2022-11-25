@@ -24,7 +24,7 @@ https://colab.research.google.com/drive/1oMDA37RPqLsV02G0zDd6kaWDExMvUDVi
 
 ## Technical Requirements
 The technical requirements for Project 2 are as follows:
-- Create a Jupyter Notebook, Google Colab Notebook, or Amazon SageMaker Notebook to prepare a training and testing dataset.
+- (DONE) Create a Jupyter Notebook, Google Colab Notebook, or Amazon SageMaker Notebook to prepare a training and testing dataset.
 - Optionally, apply a dimensionality reduction technique to reduce the input features, or perform feature engineering to generate new features to train the model.
 - Create one or more machine learning models.
 - Fit the model(s) to the training data.
