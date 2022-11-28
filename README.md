@@ -2,6 +2,8 @@
 
 ## Presentation Link & Google Colab Link
 
+https://docs.google.com/presentation/d/1x6WQz60sm8E2nrq6oml_08uXx1_6KKVmHU9o3wt5lWs/edit?usp=sharing
+
 https://colab.research.google.com/drive/1oMDA37RPqLsV02G0zDd6kaWDExMvUDVi
 
 
