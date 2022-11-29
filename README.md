@@ -23,6 +23,10 @@ https://colab.research.google.com/drive/1oMDA37RPqLsV02G0zDd6kaWDExMvUDVi
 
 ## Usage and Installation instructions
 
+To view this project, follow the main branch found in this Github repo to the final code that encompasses all of the contributions made by the team members.
+
+The code which is submitted is commented with concise, relevant notes that other developers can understand so future extensions on the work submitted can be explored if needed.
+
 
 ## Technical Requirements
 The technical requirements for Project 2 are as follows:
