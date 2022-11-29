@@ -14,8 +14,14 @@ https://colab.research.google.com/drive/1oMDA37RPqLsV02G0zDd6kaWDExMvUDVi
 - Create 3 models to be this prediction 
 - 1: machine learning 2. AI model/neural network 3. TBD (supervised learning/unsupervised learning
 - outcome: which model does the best at predicting - returns the best trading performance 
-
+- timeline: 
 ## Analysis, Conclusions and Implications
+
+Model 1:
+
+Model 2:
+
+Model 3: 
 
 ## Connection to Course Content
 
