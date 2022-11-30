@@ -4,17 +4,27 @@
 
 https://docs.google.com/presentation/d/1x6WQz60sm8E2nrq6oml_08uXx1_6KKVmHU9o3wt5lWs/edit?usp=sharing
 
-https://colab.research.google.com/drive/1oMDA37RPqLsV02G0zDd6kaWDExMvUDVi
+
 
 
 ## Scope and Purpose of Project
-- y varible (target) is BNS
-- trying to trade BNS (trading strategy) in a way that will beat a buy and hold strategy relative to the other correlated bank stocks 
-- Baseline: buy and hold would be from the Monte Carlo from BNS with its CI (closer to the top end of the CI)
-- Create 3 models to be this prediction 
-- 1: machine learning 2. AI model/neural network 3. TBD (supervised learning/unsupervised learning
-- outcome: which model does the best at predicting - returns the best trading performance 
-- timeline: 
+
+For Project 2, the project team will be working off the findings in Project 1 (github link here: https://github.com/NatashaPredov/Project-1-.git) to further understand how the learnings from the last few Module's can work to benefit those applying them in real life situations. 
+
+To summarize the scope from Project 1: 
+- Wanted to investigate and determine a predictive model for the long term behaviour of relatively stable ETFs.
+- Wanted understand how this model would react and change due to the unforseen impacts the COVID-19 pandemic had on the Canadian Banks. 
+- The timeframe of the model data that the team will be analyzing covers 4 years: August 2016 through July 2020. While the validation data will cover: August 2019 through July 2020 - 6 months before and after the February 2020 COVID-19 crash. Due to this being unforseen and very out of the ordinary, the team will be ignoring the data up until Feb 2020 then picking our analysis back up 6 months post crash.
+
+Now to extend from Project 1, Project 2's scope entails that the project team wanted to try to trade BNS in a way that would beat a buy and hold strategy relative to the other correlated bank stocks. The y variable, which is the target variable is the Bank of Nova Scotia stock otherwise represented henseforth as BNS. 
+
+The baseline, that will represent the buy and hold strategy will come from the Monte Carlo simulation from BNS with its CI closer to the top end of CI. 
+
+To ensure we meet the technical requirements of project 2, we will be using google colab (link: https://colab.research.google.com/drive/1oMDA37RPqLsV02G0zDd6kaWDExMvUDVi) to work in an Agile framework methedology to prepare a training and testing dataset. 
+
+For this project we will be creating three machine learning models to fit and apply the data to, to determine which model returns the best trading performance. 
+
+
 ## Analysis, Conclusions and Implications
 
 Model 1:
