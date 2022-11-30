@@ -24,12 +24,18 @@ To ensure we meet the technical requirements of project 2, we will be using goog
 
 For this project we will be creating three machine learning models to fit and apply the data to, to determine which model returns the best trading performance. 
 
+The three models are as follows:
+Model 1: Machine Learning model using PyeCarrot
+
+Model 2: Neural Network
+
+Model 3: 
 
 ## Analysis, Conclusions and Implications
 
-Model 1:
+Model 1: Machine Learning model using PyeCarrot
 
-Model 2:
+Model 2: Neural Network
 
 Model 3: 
 
