@@ -24,6 +24,8 @@ To ensure we meet the technical requirements of project 2, we will be using goog
 
 For this project we will be creating three machine learning models to fit and apply the data to, to determine which model returns the best trading performance. 
 
+The timeline for this project covers: Aug 2017 - Aug 2022 per reccomendation for a 5 year period to ensure accurancy and industry standard. 
+
 The three models are as follows:
 Model 1: Machine Learning model using PyeCarrot
 
@@ -33,11 +35,20 @@ Model 3:
 
 ## Analysis, Conclusions and Implications
 
-Model 1: Machine Learning model using PyeCarrot
+30 day rolling correlation plots for each of the banking stocks 
 
-Model 2: Neural Network
+### Model 1: Machine Learning model using PyeCarrot
+
+### Model 2: Neural Network
+
+Rational for:
+- activiation: normal linear
+- epochs: 100 
+
+Overfitting and accuracy for train test and val 
 
 Model 3: 
+
 
 ## Connection to Course Content
 
