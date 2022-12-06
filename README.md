@@ -27,11 +27,13 @@ For this project we will be creating three machine learning models to fit and ap
 The timeline for this project covers: Aug 2017 - Aug 2022 per reccomendation for a 5 year period to ensure accurancy and industry standard. 
 
 The three models are as follows:
+
 Model 1: Machine Learning model using PyeCarrot
 
 Model 2: Neural Network
 
-Model 3: 
+At a highlevel, a neural network is a powerful machine learning algorithms that utilizes . What is so interesting about this type of algorithm is reflective of biological neural networks. 
+Model 3: Moving Average Trading Indicators
 
 ## Analysis, Conclusions and Implications
 
