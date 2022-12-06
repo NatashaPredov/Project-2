@@ -4,7 +4,7 @@
 
 https://docs.google.com/presentation/d/1x6WQz60sm8E2nrq6oml_08uXx1_6KKVmHU9o3wt5lWs/edit?usp=sharing
 
-
+https://colab.research.google.com/drive/1oMDA37RPqLsV02G0zDd6kaWDExMvUDVi
 
 
 ## Scope and Purpose of Project
@@ -32,7 +32,11 @@ Model 1: Machine Learning model using PyeCarrot
 
 Model 2: Neural Network
 
-At a highlevel, a neural network is a powerful machine learning algorithms that utilizes general approximation. What is so interesting about this type of algorithm is reflective of biological neural networks. 
+At a highlevel, a neural network is a powerful machine learning algorithms that utilizes general approximation. What is so interesting about this type of algorithm is reflective of biological neural networks. Simply put a neural network makes predictions by: 
+- taking in the input data which is the data from Project 1
+- Making a prediction
+- Comparing the predictions to the hypothesis
+- adjusting the state and functions within the network 
 
 Model 3: Moving Average Trading Indicators
 
