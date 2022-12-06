@@ -32,7 +32,8 @@ Model 1: Machine Learning model using PyeCarrot
 
 Model 2: Neural Network
 
-At a highlevel, a neural network is a powerful machine learning algorithms that utilizes . What is so interesting about this type of algorithm is reflective of biological neural networks. 
+At a highlevel, a neural network is a powerful machine learning algorithms that utilizes general approximation. What is so interesting about this type of algorithm is reflective of biological neural networks. 
+
 Model 3: Moving Average Trading Indicators
 
 ## Analysis, Conclusions and Implications
