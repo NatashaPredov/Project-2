@@ -34,7 +34,7 @@ Model 2: Neural Network
 
 Model 3: Moving Average Trading Indicators
 
-## Analysis, Conclusions and Implications
+## Analysis, Conclusions,  Implications and Connection to Course Content
 
 30 day rolling correlation plots for each of the banking stocks 
 
@@ -52,22 +52,25 @@ Supervised machine learning classification algorythm that predicts if a security
     
 ### Model 2: Neural Network
 
-At a highlevel, a neural network is a powerful machine learning algorithms that utilizes general approximation. What is so interesting about this type of algorithm is reflective of biological neural networks. Simply put a neural network makes predictions by: 
+At a highlevel, a neural network is a powerful machine learning algorithms that utilizes general approximation. What is so interesting about this type of algorithm is reflective of biological neural networks so it is inspired by the human brain. Simply put a neural network makes predictions by: 
 - taking in the input data which is the data from Project 1
 - Making a prediction
 - Comparing the predictions to the hypothesis
 - adjusting the state and functions within the network 
 
-Rational for:
-- activiation: normal linear
-- epochs: 100 
+This algorithm was utilized in this project because what we have, and will continue to build, will be utilized by humans. So then, it was key to include a model that was inspired by the human brain and how humans make predictions and choices. This model allowed us to better understand how a human in this situation would react but with the ability to adjust the state and the functions within the network to produce a more accurate output. 
 
-Overfitting and accuracy for train test and val 
+What was found was... 
+
+
+
+
+
+
+
+This model directly relates to the course content as this was one of the models that was introduced in the course. Similarly to how in class, during this project we constantly extended off of previous knowledge leanred (ie reading in, cleaning data, outlining scope). 
 
 Model 3: 
-
-
-## Connection to Course Content
 
 ## Areas of challenge
 
@@ -76,7 +79,6 @@ Model 3:
 To view this project, follow the main branch found in this Github repo to the final code that encompasses all of the contributions made by the team members.
 
 The code which is submitted is commented with concise, relevant notes that other developers can understand so future extensions on the work submitted can be explored if needed.
-
 
 ## Technical Requirements
 The technical requirements for Project 2 are as follows:
