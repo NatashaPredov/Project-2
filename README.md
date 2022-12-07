@@ -53,10 +53,10 @@ Supervised machine learning classification algorythm that predicts if a security
 ### Model 2: Neural Network
 
 At a highlevel, a neural network is a powerful machine learning algorithms that utilizes general approximation. What is so interesting about this type of algorithm is reflective of biological neural networks so it is inspired by the human brain. Simply put a neural network makes predictions by: 
-- taking in the input data which is the data from Project 1
+- Taking in the input data which is the data from Project 1
 - Making a prediction
 - Comparing the predictions to the hypothesis
-- adjusting the state and functions within the network 
+- Adjusting the state and functions within the network 
 
 This algorithm was utilized in this project because what we have, and will continue to build, will be utilized by humans. So then, it was key to include a model that was inspired by the human brain and how humans make predictions and choices. This model allowed us to better understand how a human in this situation would react but with the ability to adjust the state and the functions within the network to produce a more accurate output. 
 
@@ -66,6 +66,8 @@ Process:
 - We split the data into training, validation and test sets
 - Training effects models weights, validation is used for tweaking, test ensures no overfitting
 - We can plot the loss and accuracy as a function of the number of epochs
+- We compare a single stock, BNS.TO to several other financial stocks via their delayed correlations
+- We reduced the feature set using PCA before creating the neural network
 
 Output:
 - Generally, accuracy on the validation set will decrease pass a certain number of epochs due to overfitting
