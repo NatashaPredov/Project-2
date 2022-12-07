@@ -81,7 +81,20 @@ Output:
 
 This model directly relates to the course content as this was one of the models that was introduced in the course. Similarly to how in class, during this project we constantly extended off of previous knowledge leanred (ie reading in, cleaning data, outlining scope). 
 
-Model 3: 
+Model 3: Algorithmic Trading Models (EMA and DMA)
+High Level Objective DMA - The goal was to create a optimizer to identify the optimum combination for the SMA windows used for the trading alogrithm to produce the highest cumulative return based on historical stock closing prices.
+
+Process:
+- Used yahoo finance API to source stock closing price information
+- Stored closing price info into a dataframe
+- Selected desired stock ticker from data frame (i.e. BNS.TO)
+- Optimizer function uses the Dual Moving Average formula to determine which short term and long term values to apply to Simple Moving Averages algorithm to produce the highest cumulative return for the given period. 
+ 
+ Output:
+ - Dataframe output of displays the highest cumulative return along with the short term and long term variables used to produce the return
+ - Dataframe was then sorted by descending order to easily identify which curves produced the best return for the given period
+ 
+ The hope was the optimizer would identify the best short and long term windows to apply to the SMA curves, however it was revealed that different combinations were produced based on the historical closing prices.  Given more time, more work will be done on the optimizer to establish a prediction of what time windows to leverage for future use.
 
 ## Areas of challenge
 
