@@ -88,7 +88,7 @@ Process:
 - Used yahoo finance API to source stock closing price information
 - Stored closing price info into a dataframe
 - Selected desired stock ticker from data frame (i.e. BNS.TO)
-- Optimizer function uses the Dual Moving Average formula to determine which short term and long term values to apply to Simple Moving Averages algorithm to produce the highest cumulative return for the given period. 
+- Optimizer function uses the Dual Moving Average formula to determine which short term average price window and long term average price window values to apply to Simple Moving Averages algorithm to produce the highest cumulative return for the selected stock for the given period. 
  
  Output:
  - Dataframe output of displays the highest cumulative return along with the short term and long term variables used to produce the return
