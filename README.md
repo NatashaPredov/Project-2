@@ -4,7 +4,7 @@
 
 https://docs.google.com/presentation/d/1x6WQz60sm8E2nrq6oml_08uXx1_6KKVmHU9o3wt5lWs/edit?usp=sharing
 
-
+https://colab.research.google.com/drive/1oMDA37RPqLsV02G0zDd6kaWDExMvUDVi
 
 
 ## Scope and Purpose of Project
@@ -32,28 +32,54 @@ Model 1: Machine Learning model using PyeCarrot
 
 Model 2: Neural Network
 
-At a highlevel, a neural network is a powerful machine learning algorithms that utilizes general approximation. What is so interesting about this type of algorithm is reflective of biological neural networks. 
-
 Model 3: Moving Average Trading Indicators
 
-## Analysis, Conclusions and Implications
+## Analysis, Conclusions,  Implications and Connection to Course Content
 
 30 day rolling correlation plots for each of the banking stocks 
 
 ### Model 1: Machine Learning model using PyeCarrot
 
+Supervised machine learning classification algorythm that predicts if a security is increasing or decreasing over a time period.
+ * Modeling Data Availability: Consider when data is availible   
+    ![Modeling Data Availibility](images/Modeling_Data_Availability.png)
+ *  Modeling Objective: Simple Model with Shift 
+    ![Modeling Objective](images/Intro_Modeling_Objective.png)
+ * Model Training Timeline: Complex Model with variable Shift and Interval
+    ![Model Training Timeline](images/Model_Timeline_Training.png)
+ * Model Predicting Timeline: Complex Model with variable Shift and Interval
+    ![Model Predicting Timeline](images/Model_Timeline_Predicting.png)
+    
 ### Model 2: Neural Network
 
-Rational for:
-- activiation: normal linear
-- epochs: 100 
+At a highlevel, a neural network is a powerful machine learning algorithms that utilizes general approximation. What is so interesting about this type of algorithm is reflective of biological neural networks so it is inspired by the human brain. Simply put a neural network makes predictions by: 
+- taking in the input data which is the data from Project 1
+- Making a prediction
+- Comparing the predictions to the hypothesis
+- adjusting the state and functions within the network 
 
-Overfitting and accuracy for train test and val 
+This algorithm was utilized in this project because what we have, and will continue to build, will be utilized by humans. So then, it was key to include a model that was inspired by the human brain and how humans make predictions and choices. This model allowed us to better understand how a human in this situation would react but with the ability to adjust the state and the functions within the network to produce a more accurate output. 
+
+As the model is based on a deep learning neural network, it is designed to predict whether the stock of interest, BNS.TO will increase or decrease on a given day. The model predictions are valid for up to 15 trading days out, as the feature data lags the target by 15 days, up to 40 days previous. The model is given the percent changes and correlations of the several other financial stocks offset by 5 day increments. Then weights, optimizer, activations and loss function optimized on a validation set
+
+Process: 
+- We split the data into training, validation and test sets
+- Training effects models weights, validation is used for tweaking, test ensures no overfitting
+- We can plot the loss and accuracy as a function of the number of epochs
+
+Output:
+- Generally, accuracy on the validation set will decrease pass a certain number of epochs due to overfitting
+- Currently, the best weights give roughly 55% accuracy, with roughly 70% accuracy at predicting upward movement
+- We can now test the model on real world data to compare the returns to a buy and hold strategy
+- The models only predicts how the stock will move, but not by how much
+- Neural network and PCA mean the model is a black box, so it unknown why it works
+- Since the model can only reliably predict upwards movements, short selling is not a useful strategy
+- Even so, the strategy noticeably out preforms the buy and hold strategy, not accounting for trading fees
+
+
+This model directly relates to the course content as this was one of the models that was introduced in the course. Similarly to how in class, during this project we constantly extended off of previous knowledge leanred (ie reading in, cleaning data, outlining scope). 
 
 Model 3: 
-
-
-## Connection to Course Content
 
 ## Areas of challenge
 
@@ -62,7 +88,6 @@ Model 3:
 To view this project, follow the main branch found in this Github repo to the final code that encompasses all of the contributions made by the team members.
 
 The code which is submitted is commented with concise, relevant notes that other developers can understand so future extensions on the work submitted can be explored if needed.
-
 
 ## Technical Requirements
 The technical requirements for Project 2 are as follows:
