@@ -28,7 +28,7 @@ The timeline for this project covers: Aug 2017 - Aug 2022 per reccomendation for
 
 The three models are as follows:
 
-Model 1: Machine Learning model using PyeCarrot
+Model 1: Machine Learning model using PyCaret
 
 Model 2: Neural Network
 
