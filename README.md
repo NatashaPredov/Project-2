@@ -96,7 +96,7 @@ Process:
  
  The hope was the optimizer would identify the best short and long term windows to apply to the SMA curves, however it was revealed that different combinations were produced based on the historical closing prices.  Given more time, more work will be done on the optimizer to establish a prediction of what time windows to leverage for future use.
     
-    Machine Learning Trading Bot - the goal was to find out the most appropriate entry(long) and  exit(short) position based on Ema 8 and ema 20 signals based on vwap for daily timeframe.
+   Machine Learning Trading Bot - the goal was to find out the most appropriate entry(long) and  exit(short) position based on Ema 8 and ema 20 signals based on vwap for daily timeframe.
     
     Process:
 - Used Alpaca API to source stock closing price information;
@@ -112,8 +112,6 @@ Process:
  - This model can be tested on real world data to compare the returns to a buy and sell strategy
 
 Based on this model we can get an idea when is the best time to buy and sell stocks.
-
-
 
 
 
