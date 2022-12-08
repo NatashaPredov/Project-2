@@ -85,12 +85,14 @@ This model directly relates to the course content as this was one of the models 
 High Level Objective DMA - The goal was to create a optimizer to identify the optimum combination for the SMA windows used for the trading alogrithm to produce the highest cumulative return based on historical stock closing prices.
 
 Process:
+
 - Used yahoo finance API to source stock closing price information
 - Stored closing price info into a dataframe
 - Selected desired stock ticker from data frame (i.e. BNS.TO)
 - Optimizer function uses the Dual Moving Average formula to determine which short term and long term values to apply to Simple Moving Averages algorithm to produce the highest cumulative return for the given period. 
  
  Output:
+ 
  - Dataframe output of displays the highest cumulative return along with the short term and long term variables used to produce the return
  - Dataframe was then sorted by descending order to easily identify which curves produced the best return for the given period
  
@@ -99,15 +101,17 @@ Process:
    Machine Learning Trading Bot - the goal was to find out the most appropriate entry(long) and  exit(short) position based on Ema 8 and ema 20 signals based on vwap for daily timeframe.
     
     Process:
+
 - Used Alpaca API to source stock closing price information;
 - Stored VWAP price info into a dataframe;
 - Selected desired stock ticker from data frame (i.e. BNS);
 - Generate the short and long window for exponential moving average;
 - Generate iterraw function to determine buy and sell signals;
--  Split the data into training and testing datasets;
--  Backtesting.
+- Split the data into training and testing datasets;
+- Backtesting.
  
  Output:
+ 
  - The best weights give 69% accuracy at predicting upward movement and 80% downward movement 
  - This model can be tested on real world data to compare the returns to a buy and sell strategy
 
