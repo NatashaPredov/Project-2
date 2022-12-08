@@ -102,11 +102,11 @@ Process:
     
     Process:
 
-- Used Alpaca API to source stock closing price information;
+- Used Alpaca API to source stock vwap price information;
 - Stored VWAP price info into a dataframe;
 - Selected desired stock ticker from data frame (i.e. BNS);
 - Generate the short and long window for exponential moving average;
-- Generate iterraw function to determine buy and sell signals;
+- Generate iterraws function to determine buy and sell signals;
 - Split the data into training and testing datasets;
 - Backtesting.
  
