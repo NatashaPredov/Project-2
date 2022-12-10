@@ -34,22 +34,91 @@ Model 2: Neural Network
 
 Model 3: Moving Average Trading Indicators
 
-## Analysis, Conclusions,  Implications and Connection to Course Content
-
-30 day rolling correlation plots for each of the banking stocks 
-
+## Analysis, Conclusions,  Implications and Connection to Course Content  
+  
 ### Model 1: Machine Learning model using PyeCarrot
-
-Supervised machine learning classification algorythm that predicts if a security is increasing or decreasing over a time period.
+#### A.  Overview - Framord for Model Design  
+   Supervised machine learning classification algorythm that predicts if a security is increasing or decreasing over a time period.
  * Modeling Data Availability: Consider when data is availible   
-    ![Modeling Data Availibility](images/Modeling_Data_Availability.png)
+![Modeling Data Availibility](images/Modeling_Data_Availability.png)
  *  Modeling Objective: Simple Model with Shift 
-    ![Modeling Objective](images/Intro_Modeling_Objective.png)
+    1. Green: Data is availble to create models and predictions.
+    2. Shift 6 days: Pridict up to 6 days in the future
+    3. Yellow/Red: Data is not availble for modeling or predicting
+![Modeling Objective](images/Intro_Modeling_Objective.png)
  * Model Training Timeline: Complex Model with variable Shift and Interval
-    ![Model Training Timeline](images/Model_Timeline_Training.png)
+    1. Target (y variable) interval is 7 days
+    2. Features (x variables) are sifted 14 to 58 days
+    3. Features (x variables) intervals vary 4 to 16 Days
+    4. Model is build from the past (Jan 1, 2014) to Present. Note: The ealiest possible target interval date is yesterday. 
+![Model Training Timeline](images/Model_Timeline_Training.png)
  * Model Predicting Timeline: Complex Model with variable Shift and Interval
-    ![Model Predicting Timeline](images/Model_Timeline_Predicting.png)
-    
+    1. First Prediction is for Day 0
+    2. Minimum Feature(x) Shift (CM.TO = 15) is the maximum day of future predictions (days 0 to 14). 
+![Model Predicting Timeline](images/Model_Timeline_Predicting.png)
+  
+#### B.  Variable Selection
+   * Seeking Feature X to Target Y Correlation:
+      * Target Y percent change over 7 days
+         * Negative shift 8 - 42 days 
+         * Avoids forward looking bias
+      * Nested Loops for feature X variables
+         * Percent change over 1 - 42 days 
+      * Variable selection 
+         * Highest correlation for each feature 
+         * 13 total variables selected 
+      * [Jupyter Notebook Output:](code/Project2_Correlations_to_BNS.ipynb)  
+![Feature(X) Variable Selection](images/Feature_Variable_Selection.png)
+
+#### C. Trading Plan
+It is important to have a trading plan describing when to enter and exit a trade.
+   1. Predict a sequence of increases or decreases.
+   2. Enter Trade: At the begining of the squence.  
+      a.  Long (buy) up-trends  
+      b.  Short (sell) down-trends  
+   3. Exit Trade: With a trailing stop loss.  
+      a.  1 Standard deviation of daily percent change in the opposit direction  
+      b.  Emperical Rule: 84% of the daily changes will be in the correct direction.   
+
+#### D.  Model Building with Pycaret
+   * Data Selection 
+      * Created data frames for Target Y and Feature X-variables 
+      * Included shifts and percent change ranges 
+      * Concatenated into single dataframe 
+   * Using PyCaret Library
+      * PyCaret recommends best machine learning option  
+   * Logistic Regression Model. 
+      * Imbalanced training dataset 920 : 307
+      * Random Oversampler balanced to 520: 520
+      * Balanced validation dataset 114 : 113
+   * [Jupyter Notebook Output:](code/Project_2_ML_Logistic_Regression.ipynb)  
+![Feature(X) Variable Selection](images/Pycaret_Recomended_Model.png)
+   
+   * Training Model (Date Range Jan 1, 2014  -  Dec 31, 2018(5 years))
+      * Train Test Split - 70 : 30
+      * Training Accuracy Score  0.556
+      * Testing Accuracy Score   0.573
+      * Testing Precision Score(Increases)  0.75 
+      * Testing Recall Score (Decreases) 0.40 
+   * Model Validation (Date Range Jan 1, 2019  -  Dec 31, 2019(1 yr))
+      * Testing Accuracy Score   0.502
+      * Testing Precision Score(Increases)  0.50 
+      * Testing Recall Score (Decreases) 0.00  
+   
+  
+#### E. Conclusion
+   * Training Model indicated correlation between leading and target stocks  
+   * Validation Model failed in recommending a buying and hold strategy  
+   * Next Steps  
+      * Explore other models:  
+         - Extra Trees Classifier (Highest Accuracy)  
+         - Linear Discriminant Analysis (Highest AUC, Recall, and Precision)  
+      * Develop more feature engineering variables:  
+         - z-scores  
+         - close as % of daily range  
+         - 30 day rolling correlation  
+  
+  
 ### Model 2: Neural Network
 
 At a highlevel, a neural network is a powerful machine learning algorithms that utilizes general approximation. What is so interesting about this type of algorithm is reflective of biological neural networks so it is inspired by the human brain. Simply put a neural network makes predictions by: 
